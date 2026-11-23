@@ -33,7 +33,7 @@
     });
 
     // Restablecer si se amplía la pantalla
-    window.matchMedia("(min-width: 761px)").addEventListener("change", function (e) {
+    window.matchMedia("(min-width: 821px)").addEventListener("change", function (e) {
       if (e.matches) setOpen(false);
     });
   }
@@ -50,7 +50,7 @@
 
   // Animación de aparición al hacer scroll
   var targets = document.querySelectorAll(
-    ".section-head, .card, .sector, .tech-list li, .steps li, .contact-card, .split > div"
+    ".section-head, .video-frame, .servicio, .foto, .cifra, .frase blockquote, .sector, .logo-vertical, .datos"
   );
 
   targets.forEach(function (el) { el.classList.add("reveal"); });
